@@ -1,0 +1,43 @@
+{
+  "modes": {
+    "realtime_mic": {
+      "t_base": 1.05,
+      "q_multiplier": 1.35,
+      "confidence_threshold": 0.52,
+      "q_abstain_threshold": 0.30,
+      "conformal_thresholds": {
+        "Normal": 0.95,
+        "Asthma": 0.90,
+        "COPD": 0.92,
+        "Pneumonia": 0.95,
+        "Bronchial": 0.92
+      }
+    },
+    "clinical_upload": {
+      "t_base": 1.3876,
+      "q_multiplier": 4.784528,
+      "confidence_threshold": 0.85,
+      "q_abstain_threshold": 0.35,
+      "conformal_thresholds": {
+        "Normal": 0.990131,
+        "Asthma": 0.938943,
+        "COPD": 0.957649,
+        "Pneumonia": 0.990242,
+        "Bronchial": 0.984032
+      }
+    }
+  },
+  "conformal_thresholds": {
+    "Normal": 0.990131,
+    "Asthma": 0.938943,
+    "COPD": 0.957649,
+    "Pneumonia": 0.990242,
+    "Bronchial": 0.984032
+  },
+  "q_ats": {
+    "t_base": 1.3876,
+    "q_multiplier": 4.784528
+  },
+  "confidence_threshold": 0.85,
+  "q_abstain_threshold": 0.35
+}

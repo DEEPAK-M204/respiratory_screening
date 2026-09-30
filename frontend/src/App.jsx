@@ -1,16 +1,23 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Home from './pages/Home';
-import Upload from './pages/Upload';
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
+import Layout from './components/Layout';
+import Dashboard from './pages/Dashboard';
+import Screen from './pages/Screen';
 import Results from './pages/Results';
+import History from './pages/History';
 
 export default function App() {
   return (
     <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/upload" element={<Upload />} />
-        <Route path="/results" element={<Results />} />
-      </Routes>
+      <Layout>
+        <Routes>
+          <Route path="/" element={<Dashboard />} />
+          <Route path="/screening" element={<Screen />} />
+          <Route path="/history" element={<History />} />
+          <Route path="/results" element={<Results />} />
+          {/* Fallback redirect */}
+          <Route path="*" element={<Navigate to="/" replace />} />
+        </Routes>
+      </Layout>
     </BrowserRouter>
   );
 }

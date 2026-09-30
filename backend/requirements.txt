@@ -4,5 +4,8 @@ python-multipart==0.0.9
 librosa==0.10.2.post1
 numpy==1.26.4
 soundfile==0.12.1
+scipy>=1.10.0
+noisereduce>=3.0.0
+torch>=2.0.0
 pymongo==4.8.0
 python-dotenv==1.0.1
